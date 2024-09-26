@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>ICACSDF 25</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  
+ 
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+      
+	  <style>
+    /* Basic reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Hero section styling */
+    .hero {
+      width: 100%;
+      min-height: 75vh; /* The hero section will take 75% of the viewport height */
+      position: relative;
+      display: flex;
+      justify-content: center; /* Center content horizontally */
+      align-items: center; /* Center content vertically */
+      overflow: hidden; /* Ensure video doesn't overflow */
+      background: url("../img/fallback-image.jpg") center center / cover no-repeat; /* Fallback image */
+    }
+
+    /* Video background setup */
+    .video-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: -1; /* Place video behind content */
+    }
+
+    /* Video itself */
+    .video-container video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      transform: translate(-50%, -50%);
+      object-fit: cover; /* Ensures the video covers the entire hero section without getting cut */
+      width: auto;
+      height: auto;
+    }
+
+    /* Hero content styling */
+    .hero-content {
+      position: relative;
+      z-index: 1; /* Ensure content is above the video */
+      color: white;
+      text-align: center;
+    }
+
+    /* Button styling */
+    .hero-content a {
+      background-color: #ff6347;
+      padding: 15px 30px;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 18px;
+      margin-top: 20px;
+      display: inline-block;
+    }
+
+    /* Responsive text sizing */
+    @media (max-width: 768px) {
+      .hero-content h1 {
+        font-size: 24px;
+      }
+      .hero-content p {
+        font-size: 16px;
+      }
+    }
+  </style>
+  
+	<style>
+        .countdown-container {
+            background: linear-gradient(130deg, #a1c4fd 0%, #c2e9fb 100%);
+            border-radius: 20px;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+        .countdown-timer {
+            font-size: 1.2em;
+            margin-bottom: .2em;
+        }
+        .event-details {
+            margin-top: .5em;
+        }
+        .service-item {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            position: relative;
+            text-align: center;
+            width: 100%;
+        }
+        .icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: #7d77ff;
+        }
+        h4 a.stretched-link {
+            color: #333;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+    </style>
+
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header sticky-top">
+
+    <div class="topbar d-flex align-items-center">
+      <div class="container d-flex justify-content-center justify-content-md-between">
+        <div class="contact-info d-flex align-items-center">
+          <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:conference_socs@ddn.upes.ac.in">conference_socs@ddn.upes.ac.in</a></i>
+ 
+        </div>
+		
+			
+		
+        <div class="social-links d-none d-md-flex align-items-center">
+          <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+    </div><!-- End Top Bar -->
+
+    <div class="branding d-flex align-items-cente">
+
+      <div class="container position-relative d-flex align-items-center justify-content-between">
+       <!-- Adding the Conference logo -->
+    <div class="conference-logo">
+      <a href="index.html" class="logo d-flex align-items-center"> <img src="assets/img/conflogo.png" alt="Conference Logo"/ > </a>
+    </div>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="Committee.html">Committee</a></li>
+            <li><a href="Registration.html">Registration</a></li>
+            <li><a href="Review.html">Review Process</a></li>
+            <li class="dropdown"><a href="call.html"><span>Call for Paper</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+               <li><a href="guideline.html">Author Guidlines</a></li>
+                <li><a href="theme.html">Conference Themes</a></li>
+                <li><a href="importantdates.html">Important Dates</a></li>
+                <li><a href="https://www.springer.com/gp/authors-editors/conference-proceedings/editors">Paper Template</a></li>
+              </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+<!-- Adding the Springer logo -->
+    <div class="springer-logo">
+      <a href="https://www.springer.com/series/15179" class="logo d-flex align-items-center"> <img src="assets/img/springer.png" alt="Springer Logo"  / > </a>
+    </div>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+   <section id="hero" class="hero section dark-background">
+  <div class="video-container">
+    <video autoplay muted loop playsinline>
+      <source src="vid1.webm" type="video/webm">
+      <source src="vid1.mp4" type="video/mp4"> <!-- MP4 as fallback -->
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  
+  <div class="hero-content">
+    <h1> International Conference On Advancement In Cyber Security And Digital Forensics  </h1> <br> <h1>(ICACSDF 2025) </h1> <br>
+    
+      <h2> <span> <strong class="px-1 sitename">  11th - 12th April 2025 </strong> </span></h2> 
+       <h3><span> <strong class="px-1 sitename"> Venue: UPES Dehradun </strong> </span> </h3> 
+	
+    <h2> <span> Event Starts in
+      <div class="hero-content">
+        <div id="timer">  
+          <span> <strong class="px-1 sitename"> Loading... </strong> </span>
+		  </div>
+      </div>
+    </span> </h2>
+	
+
+    
+  </div>
+  
+</section><!-- /Hero Section -->
+<!-- /Hero Section -->
+
+ 
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+<!-- Countdown Timer Script -->
+<script type="text/javascript">
+    // Set the date for the countdown
+    var countDownDate = new Date("April 11, 2025 00:00:00").getTime();
+
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+
+        // Get today's date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now and the countdown date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes, and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Output the result in an element with id="timer"
+        document.getElementById("timer").innerHTML =  days +"d" + " : " + hours +"h" + " : " + minutes + "m" + " : " + seconds + "s";
+       
+		// If the countdown is finished, display some text
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("timer").innerHTML = "EXPIRED";
+        }
+    }, 1000);
+</script>
+<div style="color:#fff; font-weight:400; background-color:#EE3624; margin-top:-30px"><marquee behavior="alternate"><span style="margin-left:20px">Submission and Registration Link : Comming Soon !!!</span></marquee></div>
+
+
+    <!-- About Section -->
+    <section class="about section dark-background">
+
+
+
+
+<div class="container">
+          <div class="col-lg-12 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+            <div class="about-content ps-0 ps-lg-4">
+            <p class="text-justify"> The International Conference on Advances in Cyber Security and Digital Forensics is a crucial event that brings together cybersecurity experts, digital forensics researchers, and information security professionals. This conference is dedicated to tackling the ever-changing challenges in cybersecurity and digital forensics, underscoring the need for advanced solutions in today's rapidly evolving technological landscape. Attendees will participate in discussions, share insights, and collaborate on the latest advancements in cybersecurity strategies, threat mitigation, and digital forensic techniques. The conference serves as a vibrant platform for exploring emerging trends, fostering interdisciplinary dialogue, and shaping the future of cybersecurity and digital forensics amidst evolving threats and digital crimes. </p>
+            </div>
+
+          </div>
+        </div>
+		</section>
+
+    <!-- Featured Services Section -->
+    <section class="featured-services section">
+	
+      <div class="container">
+        <center> <h1> <b> Schedule </b> </h1> </center> 
+        <div class="row gy-4">
+
+          <div class="col-xl-3 col-md-6 d-flex">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-activity icon"></i></div>
+              <h4><a href="" class="stretched-link">Submission Deadline</a></h4>
+              <h4><p>18th Dec 2024</p></h4>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-bounding-box-circles icon"></i></div>
+              <h4><a href="" class="stretched-link">Notification of Acceptance</a></h4>
+              <h4><p>30th Jan 2025</p></h4>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-calendar4-week icon"></i></div>
+              <h4><a href="" class="stretched-link">Submission of Revised and Camera Ready Version</a></h4>
+              <h4><p>14th Feb 2025</p></h4>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-broadcast icon"></i></div>
+              <h4><a href="" class="stretched-link">Conference Date</a></h4>
+              <h4><p>11th - 12th April 2025</p></h4>
+            </div>
+          </div><!-- End Service Item -->
+        </div>
+        <div class="container section-title" data-aos="fade-up">
+                <p> <span class="description-title"> Submission and Registration Link : Comming Soon !!! </span></p>
+      </div>
+      </div>
+
+    </section><!-- /Featured Services Section -->
+
+<section class="light-background">
+    <div class="container">
+        <div class="col-lg-12 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+            <div class="about-content ps-0 ps-lg-3">
+                <h3> <strong> Objectives </strong> </h3> <br>
+                <ul>
+                    <li>Share Knowledge, Research Findings, And Innovative Ideas, Products, And Services.</li>
+                    <li>Foster Collaboration, Partnerships, Joint Projects, And Business Opportunities.</li>
+                    <li>Discuss And Address Specific Challenges Or Issues Within The Cyber Security Industry.</li>
+                    <li>Engage With Regulatory Bodies And Policymakers To Address Regulatory Challenges.</li>
+                    <li>Explore The Impact Of Emerging Technologies On Cyber Security.</li>
+                    <li>Provide Opportunities For Skills Development And Training.</li>
+                    <li>Raise Awareness About The Importance Of Cyber Security.</li>
+                    <li>Encourage Sharing Of Threat Intelligence And Information On Latest Cyber Threats.</li>
+                    <li>Promote Research And Development In Cyber Security.</li>
+                    <li>Discuss And Promote Industry Standards, Frameworks, And Best Practices.</li>
+                    <li>Provide Insights Into Effective Incident Response And Crisis Management Strategies.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+		
+		
+	
+    <!-- Conference Theme -->
+    <section id="" class="">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+       
+        <p><span>Conference</span> <span class="description-title">Theme</span></p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-broadcast"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3> Privacy and Information Security </h3>
+              </a>
+              <p>Privacy and Information Security address the challenges of safeguarding sensitive data while ensuring secure interactions across communication systems.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-broadcast"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Advancements in Cryptography</h3>
+              </a>
+              <p>Cryptography remains at the heart of data security, where cryptographic protocols ensure secure data transmission and storage. </p>
+            </div>
+          </div><!-- End Service Item -->
+
+           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-broadcast"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Cyber Threat Intelligence (CTI) and Mitigation</h3>
+              </a>
+              <p>Cyber Threat Intelligence (CTI) is a proactive approach to identifying and mitigating potential cyber threats.  </p>
+            </div>
+          </div><!-- End Service Item -->
+
+          
+		  <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-broadcast"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Quantum Cryptography </h3>
+              </a>
+              <p>Quantum cryptography introduces revolutionary concepts like Quantum Key Distribution (QKD) and quantum hacking countermeasures.  </p>
+            </div>
+          </div><!-- End Service Item -->
+
+          
+
+          
+<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-broadcast"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Role of AI & ML in Cybersecurity</h3>
+              </a>
+              <p>AI and machine learning (ML) have transformed cybersecurity, enabling automated detection and response to cyber threats.  </p>
+            </div>
+          </div><!-- End Service Item -->
+
+<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-broadcast"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Security Testing & Auditing</h3>
+              </a>
+              <p>Security testing and auditing involve assessing and improving the security posture of IT systems.   </p>
+            </div>
+          </div><!-- End Service Item -->
+
+<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-broadcast"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Blockchain Technology: Innovations and Applications </h3>
+              </a>
+              <p>Blockchain, a decentralized and secure system, enables the development of distributed ledgers and smart contracts.  </p>
+            </div>
+          </div><!-- End Service Item -->
+
+<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-broadcast"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Security Policies, Auditing, and Assurance</h3>
+              </a>
+              <p>Effective security policies form the foundation of organizational security. Security audits and risk management ensure compliance with established standards. </p>
+            </div>
+          </div><!-- End Service Item -->
+		  
+		  <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-broadcast"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Digital Forensics</h3>
+              </a>
+              <p>Digital forensics collects, analyses, and preserves digital evidence to investigate cyber crimes. </p>
+            </div>
+          </div><!-- End Service Item -->
+		  
+		  <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-broadcast"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Internet of Things (IoT) Security</h3>
+              </a>
+              <p>IoT security addresses the vulnerabilities associated with interconnected devices.   </p>
+            </div>
+          </div><!-- End Service Item -->
+		  
+		  <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-broadcast"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Software Security</h3>
+              </a>
+              <p>Software security involves practices that protect applications throughout their lifecycle.   </p>
+            </div>
+          </div><!-- End Service Item -->
+		  
+		  <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-broadcast"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Web Security</h3>
+              </a>
+              <p>Web security involves protecting websites and applications from threats through various measures.   </p>
+            </div>
+          </div><!-- End Service Item -->
+		  
+		  
+		  
+		  <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-broadcast"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Security Protocols</h3>
+              </a>
+              <p>Security protocols are essential for protecting data and communications across various systems.  </p>
+            </div>
+          </div><!-- End Service Item -->
+		  
+		  <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-broadcast"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Malware Analysis & Detection</h3>
+              </a>
+              <p>Malware analysis and detection focus on identifying and mitigating malicious software threats.  </p>
+            </div>
+          </div><!-- End Service Item -->
+		  
+		  <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-broadcast"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Information Hiding & Watermarking</h3>
+              </a>
+              <p>Information hiding and watermarking focus on protecting digital content and intellectual property.  </p>
+            </div>
+          </div><!-- End Service Item -->
+		  
+		  <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-broadcast"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Database & System Security</h3>
+              </a>
+              <p>Database and system security protects data and systems from unauthorized access and threats.  </p>
+            </div>
+          </div><!-- End Service Item -->
+		  
+		  
+		  <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-broadcast"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Cloud Computing Security</h3>
+              </a>
+              <p>Cloud computing security focuses on protecting data and resources in cloud environments.   </p>
+            </div>
+          </div><!-- End Service Item -->
+
+
+
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+ <!-- Clients Section -->
+<section id="clients" class="clients section light-background">
+
+  <div class="container">
+
+    <div class="swiper init-swiper">
+      <script type="application/json" class="swiper-config">
+        {
+          "loop": true,
+          "speed": 1000,
+          "autoplay": {
+            "delay": 1000
+          },
+          "slidesPerView": "auto",
+          "pagination": {
+            "el": ".swiper-pagination",
+            "type": "bullets",
+            "clickable": true
+          },
+          "breakpoints": {
+            "320": {
+              "slidesPerView": 1,
+              "spaceBetween": 20
+            },
+            "480": {
+              "slidesPerView": 2,
+              "spaceBetween": 40
+            },
+            "640": {
+              "slidesPerView": 3,
+              "spaceBetween": 60
+            },
+            "992": {
+              "slidesPerView": 4,
+              "spaceBetween": 80
+            }
+          }
+        }
+      </script>
+      <div class="swiper-wrapper align-items-center">
+        
+        <!--<div class="swiper-slide"><img src="assets/img/clients/" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/clients/" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/clients/" class="img-fluid" alt=""></div>-->
+		<div class="swiper-slide"><img src="assets/img/clients/client-22.png" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/clients/client-33.png" class="img-fluid" alt=""></div>
+        <!--<div class="swiper-slide"><img src="assets/img/clients/" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/clients/" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/clients/" class="img-fluid" alt=""></div>-->
+      </div>
+    </div>
+
+  </div>
+
+</section><!-- /Clients Section -->
+
+<style>
+  .swiper-slide img {
+    width: 100%; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+  }
+</style>
+
+
+
+  </main>
+
+  <footer id="footer" class="footer">
+
+
+    <div class="container footer-top">
+     <div class="row gy-4">
+	 <div class="col-lg-4 col-md-12">
+                     
+              <span class="sitename">
+                <img src="assets/img/team/team-5.jpg" class="img-fluid" alt=""> </span>
+                     
+          </div><!-- End Team Member -->
+		  
+		  
+        <div class="col-lg-4 col-md-12">
+          <h4>About</h4>
+          <span class="sitename"> <p class="text-justify"> <b> NIRF Ranking 2024 </b> <br>
+As per the National Institutional Ranking Framework (NIRF) 2024, the Ministry of Education, India, UPES has been ranked 46, with a rank of 42 in engineering, 41 in management and 28 in law.</p>
+
+</span>
+        </div>
+
+        <div class="col-lg-4 col-md-12">
+          <h4>Contact Us</h4>
+          <span class="sitename">
+          <p class="text-justify">
+Contact UPES, Bidholi Campus, Dehradun
+P.O. Bidholi Via Premnagar,
+Dehradun-248007 </p>
+<p><strong>Email:</strong> <span><a href="mailto:conference_socs@ddn.upes.ac.in">conference_socs@ddn.upes.ac.in</a></span></p>
+
+</span>
+        </div>
+
+      </div>
+    
+	
+
+    <div class="container copyright text-center mt-4">
+      <p> Copyright ©  <strong class="px-1 sitename">ICACSDF 2025</strong></p>
+       </div>
+</div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
