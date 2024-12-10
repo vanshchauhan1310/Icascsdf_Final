@@ -1954,3 +1954,98 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+
+/* CSS for Registration Rules */
+.rules-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+.rules-title {
+  text-align: center;
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #6e8efb;
+}
+
+.rule-section {
+  margin-bottom: 25px;
+  padding-bottom: 10px;
+}
+
+.section-title {
+  font-size: 20px;
+  color: #6e8efb;
+  margin-bottom: 15px;
+  padding-left: 10px;
+  border-left: 4px solid #6e8efb;
+}
+
+.bullet-list {
+  list-style-type: none;
+  padding-left: 15px;
+  margin-bottom: 15px;
+}
+
+.bullet-list li {
+  position: relative;
+  padding-left: 24px;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.bullet-list li::before {
+  content: "•";
+  color: #6e8efb;
+  font-size: 20px;
+  position: absolute;
+  left: 0;
+  top: -2px;
+}
+
+.listener-section {
+  background-color: #f8f9ff;
+  padding: 20px;
+  border-radius: 8px;
+  border-left: 4px solid #a777e3;
+}
+
+.listener-section .section-title {
+  color: #a777e3;
+  border-left: 4px solid #a777e3;
+}
+
+.listener-section .bullet-list li::before {
+  color: #a777e3;
+}
+
+.note {
+  background-color: rgba(166, 119, 227, 0.1);
+  padding: 12px 15px;
+  border-radius: 6px;
+  font-size: 0.95em;
+  border-left: 4px solid #a777e3;
+}
+
+@media (max-width: 768px) {
+  .rules-container {
+      padding: 20px 15px;
+  }
+  
+  .rules-title {
+      font-size: 24px;
+  }
+  
+  .section-title {
+      font-size: 18px;
+  }
+}
