@@ -1,0 +1,1777 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>ICACSDF2025</title>
+    <meta name="google-site-verification" content="7aBQzzonjuOJ3Y6FY7Vf1dMUi73YuQFNxj1Oi1kr-kE" />
+
+    <meta name="description" content="icacsdf,ICACSDF is the International Conference on Advancement in Cyber Security and Digital Forensics, hosted by UPES Dehradun on April 11-12, 2025. Join leading experts in cybersecurity and digital forensics.">
+  <meta name="keywords" content="icacsdf2025, icacsdf,ICACSDF cybersecurity conference, digital forensics conference, UPES Dehradun, cyber security advancement, international conference">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  
+ 
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+      
+	  <style>
+    /* Basic reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Hero section styling */
+    .hero {
+      width: 100%;
+      min-height: 75vh; /* The hero section will take 75% of the viewport height */
+      position: relative;
+      display: flex;
+      justify-content: center; /* Center content horizontally */
+      align-items: center; /* Center content vertically */
+      overflow: hidden; /* Ensure video doesn't overflow */
+      background: url("../img/fallback-image.jpg") center center / cover no-repeat; /* Fallback image */
+    }
+
+    /* Video background setup */
+    .video-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: -1; /* Place video behind content */
+    }
+
+    /* Video itself */
+    .video-container video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      transform: translate(-50%, -50%);
+      object-fit: cover; /* Ensures the video covers the entire hero section without getting cut */
+      width: auto;
+      height: auto;
+    }
+
+    /* Hero content styling */
+    .hero-content {
+      position: relative;
+      z-index: 1; /* Ensure content is above the video */
+      color: white;
+      text-align: center;
+    }
+
+    /* Button styling */
+    .hero-content a {
+      background-color: #ff6347;
+      padding: 15px 30px;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 18px;
+      margin-top: 20px;
+      display: inline-block;
+    }
+
+    /* Responsive text sizing */
+    @media (max-width: 768px) {
+      .hero-content h1 {
+        font-size: 24px;
+      }
+      .hero-content p {
+        font-size: 16px;
+      }
+    }
+  </style>
+  
+	<style>
+        .countdown-container {
+            background: linear-gradient(130deg, #a1c4fd 0%, #c2e9fb 100%);
+            border-radius: 20px;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+        .countdown-timer {
+            font-size: 1.2em;
+            margin-bottom: .2em;
+        }
+        .event-details {
+            margin-top: .5em;
+        }
+        .service-item {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            position: relative;
+            text-align: center;
+            width: 100%;
+        }
+        .icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: #7d77ff;
+        }
+
+        h4 a.stretched-link {
+            color: #333;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+
+
+        /**/
+         /* Chatbot styles */
+    #chatbot-container {
+      position: fixed;
+      bottom: 75px;
+      right: 6px;
+      z-index: 1000;
+      font-family: Arial, sans-serif;
+    }
+
+    #chatbot-button {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: #2196F3;
+      color: white;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    #chatbot-window {
+      display: none;
+      width: 340px;
+      height: 400px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      flex-direction: column;
+    }
+
+    #chatbot-header {
+      background-color: #2196F3;
+      color: white;
+      padding: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    #close-button {
+      background: none;
+      border: none;
+      color: white;
+      cursor: pointer;
+      font-size: 20px;
+    }
+
+    #chatbot-messages {
+      flex-grow: 1;
+      overflow-y: auto;
+      padding: 15px;
+    }
+
+    .message {
+      margin-bottom: 10px;
+      max-width: 80%;
+      padding: 8px 12px;
+      border-radius: 15px;
+    }
+
+    .bot-message {
+      background-color: #f1f1f1;
+      align-self: flex-start;
+    }
+
+    .user-message {
+      background-color: #2196F3;
+      color: white;
+      align-self: flex-end;
+      margin-left: auto;
+    }
+
+    #chatbot-input {
+      display: flex;
+      padding: 10px;
+      border-top: 1px solid #ddd;
+    }
+
+    #user-input {
+      flex-grow: 1;
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      margin-right: 8px;
+    }
+
+    #send-button {
+      background-color: #2196F3;
+      color: white;
+      border: none;
+      padding: 8px 15px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .message-container {
+      display: flex;
+      margin-bottom: 10px;
+    }
+
+
+
+
+  .suggestions-container {
+  position: fixed;
+  bottom: 75px;
+  right: 80px;
+  z-index: 999;
+  font-family: 'Roboto', sans-serif;
+  max-width: 300px;
+}
+
+.suggestions-panel {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+}
+
+.suggestions-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.header-title {
+  display: flex;
+  align-items: center;
+}
+
+.header-title i {
+  color: #2196F3;
+  margin-right: 8px;
+  font-size: 1.2em;
+}
+
+.header-title h2 {
+  margin: 0;
+  font-size: 1.1em;
+  color: #333;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  color: #666;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.suggestions-subtitle {
+  color: #666;
+  margin-bottom: 10px;
+  font-size: 0.9em;
+}
+
+.suggestion-item {
+  display: flex;
+  align-items: flex-start;
+  padding: 8px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.2s;
+}
+
+.suggestion-item:hover {
+  background-color: #f5f5f5;
+}
+
+.suggestion-icon {
+  font-size: 1.5em;
+  margin-right: 10px;
+  min-width: 25px;
+  text-align: center;
+}
+
+.suggestion-content {
+  flex-grow: 1;
+}
+
+.suggestion-text {
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 2px;
+}
+
+.suggestion-example {
+  font-size: 0.8em;
+  color: #666;
+}
+    </style>
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "International Conference on Advancement in Cyber Security and Digital Forensics (ICACSDF2025)",
+    "description": "ICACSDF2025 brings together cybersecurity experts, digital forensics researchers, and information security professionals to address evolving challenges in the field.",
+    "startDate": "2025-04-11",
+    "endDate": "2025-04-12",
+    "location": {
+      "@type": "Place",
+      "name": "UPES Dehradun",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "P.O. Bidholi Via Premnagar",
+        "addressLocality": "Dehradun",
+        "postalCode": "248007",
+        "addressCountry": "IN"
+      }
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "School of Computer Science, UPES Dehradun",
+      "url": "https://www.upes.ac.in"
+    }
+  }
+  </script>
+
+</head>
+
+<body class="index-page">
+
+  <!--Start of Chatbot-->
+
+  <div id="chatbot-container">
+    <button id="chatbot-button">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+      </svg>
+    </button>
+    
+    <div id="chatbot-window">
+      <div id="chatbot-header">
+        <span>Conference Assistant</span>
+        <button id="close-button">&times;</button>
+      </div>
+      <div id="chatbot-messages">
+
+        <p class="suggestions-subtitle">You can ask me about:</p>
+        <div id="suggestions-list"></div>
+      </div>
+
+      <div id="chatbot-input">
+        <input type="text" id="user-input" placeholder="Type your question...">
+        <button id="send-button">Send</button>
+      </div>
+    </div>
+  </div>
+
+
+  
+
+  <!--End of Chatbot-->
+
+
+  <header id="header" class="header sticky-top">
+
+    <div class="topbar d-flex align-items-center">
+      <div class="container d-flex justify-content-center justify-content-md-between">
+        <div class="contact-info d-flex align-items-center">
+          <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:scsdf2025@gmail.com">scsdf2025@gmail.com</a></i>
+        </div>
+		
+			 <div class="contact-info d-flex align-items-center">
+          <i class=" d-flex align-items-center"> <a href="https://forms.gle/wHzmjXquUkw3P9jM6">Paper Submission</a> </i>
+        </div>
+		
+        <div class="social-links d-none d-md-flex align-items-center">
+                    <a href="https://www.facebook.com/profile.php?id=61566150947779" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.linkedin.com/events/7247846013133086720/comments/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+    </div><!-- End Top Bar -->
+
+    <div class="branding d-flex align-items-cente">
+
+      <div class="container position-relative d-flex align-items-center justify-content-between">
+       <!-- Adding the Conference logo -->
+    <div class="conference-logo">
+      <a href="index.html" class="logo d-flex align-items-center"> <img src="assets/img/logo2.png" alt="Conference Logo"/ > </a>
+    </div>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li class="dropdown"><a href="index.html"><span>Home</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="about.html">About</a></li>
+                 <li><a href="Review.html">Review Process</a></li>
+                 <li><a href="contact.html">Contact</a></li>
+                 <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeUiEY5FeQT50T6F9Rilry6GYVwBlFngahdzjoOQXKohQqkSA/viewform">Join Us</a></li>
+               </ul>
+
+
+            <li><a href="Committee.html">Committee</a></li>
+            <li><a href="Registration.html">Registration</a></li>
+            <li class="dropdown"><a href="call.html"><span>Call for Paper</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+               <li><a href="guideline.html">Author Guidlines</a></li>
+                <li><a href="theme.html">Conference Themes</a></li>
+                <li><a href="importantdates.html">Important Dates</a></li>
+                <li><a href="assets/Word+Latex-Template.zip">Paper Template</a></li>
+              </ul>
+            </li>
+
+
+            <li><a href="KeynoteSpeaker.html">Speakers</a></li>
+            <li><a href="Symposium.html">Symposium</a></li>
+
+
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+<!-- Adding the Springer logo -->
+    <div class="springer-logo">
+      <a href="" class="logo d-flex align-items-center"> <img src="assets/img/conflogo.png" alt="Springer Logo"> </a>
+    </div>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+   <section class="hero section dark-background">
+  <div class="video-container">
+    <video autoplay muted loop playsinline>
+      <source src="vid1.webm" type="video/webm">
+      <source src="vid1.mp4" type="video/mp4"> <!-- MP4 as fallback -->
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  
+  <div class="hero-content">
+    <h1>Symposium on Cyber Security and Digital Forensics </h1> <br> <h1>(SCSDF2025) </h1> <br>
+    <h2>Under the banner of<br>
+
+        International Conference on Advancements in Cyber Security<br>
+        
+        and Digital Forensics (ICACSDF2025)</h2>
+    <h2> <span> <strong class="px-1 sitename">  (Hybrid Mode)  </strong> </span></h2> 
+      <br/>
+      <h2> <span> <strong class="px-1 sitename">  11th - 12th April 2025 </strong> </span></h2> 
+       <h3><span> <strong class="px-1 sitename"> Venue: UPES Dehradun </strong> </span> </h3> 
+	
+    <h2> <span> Event Starts in
+      <div class="hero-content">
+        <div id="timer">  
+          <span> <strong class="px-1 sitename"> Loading... </strong> </span>
+		  </div>
+      </div>
+    </span> </h2>
+	
+
+    
+  </div>
+  
+</section><!-- /Hero Section -->
+<!-- /Hero Section -->
+
+ 
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+<!-- Countdown Timer Script -->
+<script type="text/javascript">
+    // Set the date for the countdown
+    var countDownDate = new Date("April 11, 2025 00:00:00").getTime();
+
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+
+        // Get today's date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now and the countdown date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes, and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Output the result in an element with id="timer"
+        document.getElementById("timer").innerHTML =  days +"d" + " : " + hours +"h" + " : " + minutes + "m" + " : " + seconds + "s";
+       
+		// If the countdown is finished, display some text
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("timer").innerHTML = "EXPIRED";
+        }
+    }, 1000);
+</script>
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+    .upes-section {
+        font-family: 'Poppins', sans-serif;
+        background: linear-gradient(135deg, #000000 0%, #0a0a0a 100%);
+        padding: 4rem 0;
+        color: #fff;
+        overflow: hidden;
+        position: relative;
+    }
+
+  
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+        position: relative;
+        z-index: 2;
+    }
+
+    .section-title {
+        text-align: center;
+        font-size: 3rem;
+        font-weight: 700;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        color: white;
+    }
+
+    .info-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+    }
+
+    .info-card {
+        background: rgba(255,255,255,0.1);
+        backdrop-filter: blur(10px);
+        border-radius: 20px;
+        padding: 2rem;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        cursor: pointer;
+    }
+
+    .info-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    }
+
+    .card-title {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        color: #ffd700;
+    }
+
+    .card-content {
+        font-weight: 300;
+        line-height: 1.6;
+    }
+
+    .badge-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-top: 1rem;
+    }
+
+    .badge {
+        padding: 0.5rem 1rem;
+        border-radius: 50px;
+        font-size: 0.8rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        background: rgba(255,255,255,0.2);
+        backdrop-filter: blur(5px);
+        transition: background 0.3s ease;
+    }
+
+    .badge:hover {
+        background: rgba(255,255,255,0.3);
+    }
+
+    .ranking-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .ranking-item {
+        background: rgba(255,255,255,0.1);
+        backdrop-filter: blur(10px);
+        border-radius: 15px;
+        padding: 1.5rem;
+        text-align: center;
+        transition: transform 0.3s ease;
+    }
+
+    .ranking-item:hover {
+        transform: scale(1.05);
+    }
+
+    .ranking-number {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+        background: linear-gradient(45deg, #ffd700, #ff8c00);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .ranking-label {
+        font-size: 0.9rem;
+        font-weight: 400;
+        color: #e0e0e0;
+    }
+
+    @media (max-width: 768px) {
+        .section-title {
+            font-size: 2.5rem;
+        }
+        .info-card, .ranking-item {
+            padding: 1.5rem;
+        }
+    }
+</style>
+
+<section class="upes-section">
+    <div class="container">
+        <h2 class="section-title">About UPES</h2>
+        <div class="info-grid">
+            <div class="info-card" id="overview-card">
+                <h3 class="card-title">University Overview</h3>
+                <p class="card-content">
+                    The University of Petroleum and Energy Studies (UPES) is a beacon of multidisciplinary education in Dehradun, India. Offering cutting-edge courses in engineering, management, law, design, health sciences, and modern media, UPES is shaping the leaders of tomorrow.
+                </p>
+                <div class="badge-container">
+                    <span class="badge">AIU Member</span>
+                    <span class="badge">UGC Recognized</span>
+                    <span class="badge">NBA Accredited</span>
+                </div>
+            </div>
+            <div class="info-card" id="achievements-card">
+                <h3 class="card-title">Stellar Achievements</h3>
+                <ul class="card-content">
+                    <li>QS Five Stars Global Rating for Employability and Facilities</li>
+                    <li>Consistently ranked among top 100 universities in India by NIRF</li>
+                    <li>Prestigious QS I-Gauge Gold Rating for Teaching and Employability</li>
+                    <li>Cutting-edge research facilities and industry partnerships</li>
+                </ul>
+            </div>
+        </div>
+        <div class="info-card" style="margin-top: 2rem;">
+            <h3 class="card-title">NIRF Ranking 2024: Scaling New Heights</h3>
+            <div class="ranking-grid">
+                <div class="ranking-item">
+                    <div class="ranking-number">46</div>
+                    <div class="ranking-label">Overall Ranking</div>
+                </div>
+                <div class="ranking-item">
+                    <div class="ranking-number">42</div>
+                    <div class="ranking-label">Engineering</div>
+                </div>
+                <div class="ranking-item">
+                    <div class="ranking-number">41</div>
+                    <div class="ranking-label">Management</div>
+                </div>
+                <div class="ranking-item">
+                    <div class="ranking-number">28</div>
+                    <div class="ranking-label">Law</div>
+                </div>
+            </div>
+        </div>
+        <div class="info-card">
+          <h3>About the Symposium</h3>
+          <p>The School of Computer Science at UPES Dehradun is hosting the Symposium on Cybersecurity and Digital Forensics as part of the prestigious International Conference On Advancement In Cyber Security And Digital Forensics 2025.</p>
+          <p>This symposium brings an excellent platform to showcase working projects as whitepapers in front of experts and professionals from around the world.</p>
+        </div>
+    </div>
+</section>
+
+<script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+        const cards = document.querySelectorAll('.info-card');
+        
+        cards.forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+
+                card.style.setProperty('--mouse-x', `${x}px`);
+                card.style.setProperty('--mouse-y', `${y}px`);
+            });
+        });
+
+        function animateNumbers() {
+            const numberElements = document.querySelectorAll('.ranking-number');
+            numberElements.forEach(el => {
+                const target = parseInt(el.textContent);
+                let current = 0;
+                const increment = target / 100;
+                const timer = setInterval(() => {
+                    current += increment;
+                    el.textContent = Math.round(current);
+                    if (current >= target) {
+                        el.textContent = target;
+                        clearInterval(timer);
+                    }
+                }, 20);
+            });
+        }
+
+        // Intersection Observer to trigger animation when section is in view
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateNumbers();
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        observer.observe(document.querySelector('.upes-section'));
+    });
+</script>
+
+<style>
+  .symposium-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: linear-gradient(145deg, #2a2a2a, #1a1a1a);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.symposium-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background: linear-gradient(135deg, #3a3a3a, #2a2a2a);
+  border-radius: 15px;
+}
+
+.symposium-header h1 {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.symposium-header h2 {
+  font-size: 2rem;
+  color: #646cff;
+  margin-bottom: 1.5rem;
+}
+
+.date-venue {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 1.2rem;
+  color: #888;
+}
+
+.date-venue span {
+  padding: 0.5rem 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+}
+
+.info-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 15px;
+  margin-bottom: 2rem;
+}
+
+.info-card h3 {
+  color: #646cff;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.info-card p {
+  color: #ddd;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.feature-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.feature-card .icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.feature-card h4 {
+  color: #646cff;
+  margin-bottom: 0.8rem;
+  font-size: 1.2rem;
+}
+
+.feature-card p {
+  color: #bbb;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .symposium-header h1 {
+    font-size: 2rem;
+  }
+
+  .symposium-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .date-venue {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+</style>
+
+
+
+
+
+
+
+  
+
+
+<section class="featured-services section">
+
+<div class="container">
+    <div class="container section-title" data-aos="fade-up">
+        <p> <span class="description-title"> Important Dates</span></p>
+    </div><!-- End Section Title -->
+   
+    <div class="row gy-1">
+
+        <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+                <div class="icon"><i class="bi bi-activity icon"></i></div>
+                <h4><a href="" class="stretched-link">Submission Deadline</a></h4>
+                <h4><p>28th Feb 2025</p></h4>
+
+            </div>
+        </div><!-- End Service Item -->
+
+        <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+                <div class="icon"><i class="bi bi-bounding-box-circles icon"></i></div>
+                <h4><a href="" class="stretched-link">Notification of Acceptance</a></h4>
+                <h4><p>15th March 2025</p></h4>
+            </div>
+        </div><!-- End Service Item -->
+
+        <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+                <div class="icon"><i class="bi bi-calendar4-week icon"></i></div>
+                <h4><a href="" class="stretched-link">Submission of Revised and Camera Ready Version</a></h4>
+                <h4><p>20th March 2025</p></h4>
+            </div>
+        </div><!-- End Service Item -->
+
+        <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+                <div class="icon"><i class="bi bi-broadcast icon"></i></div>
+
+                <h4><a href="" class="stretched-link">Last Date of Registration</h4>
+                <h4><p>25th March 2025</p></h4>
+
+                <h4><a href="" class="stretched-link">Symposium Date</a></h4>
+                <h4><p>11th - 12th April 2025</p></h4>
+            </div>
+        </div><!-- End Service Item -->
+
+   
+
+    </div>
+    
+    <!-- Submission and Registration Buttons -->
+    <div class="text-center" data-aos="fade-up" style="margin-top: 20px;">
+        <!-- Button with blinking effect -->
+		<a href="https://forms.gle/wHzmjXquUkw3P9jM6" class="blinking-button">Submit Paper</a>
+
+		<a href="https://forms.gle/ajAcTLXBS9YTJb6s6" class="blinking-button1">Registration</a>
+    <a href="assets/IEEE + Word paper Template.zip" class="blinking-button">Symposium Paper Template</a>
+
+           </div>
+</div>
+
+<style>
+    /* Animation for blinking effect with 10 unique colors */
+    @keyframes blinkColors {
+        0% {
+            background-color: #007bff; /* Color 1: Initial */
+        }
+        10% {
+            background-color: #ff6347; /* Color 2 */
+        }
+        20% {
+            background-color: #28a745; /* Color 3 */
+        }
+        30% {
+            background-color: #ffc107; /* Color 4 */
+        }
+        40% {
+            background-color: #17a2b8; /* Color 5 */
+        }
+        50% {
+            background-color: #6610f2; /* Color 6 */
+        }
+        60% {
+            background-color: #e83e8c; /* Color 7 */
+        }
+        70% {
+            background-color: #fd7e14; /* Color 8 */
+        }
+        80% {
+            background-color: #6f42c1; /* Color 9 */
+        }
+        90% {
+            background-color: #20c997; /* Color 10 */
+        }
+        100% {
+            background-color: #007bff; /* Return to Initial Color */
+        }
+    }
+
+    /* Blinking button style for the first button */
+    .blinking-button {
+        animation: blinkColors 5s infinite; /* Use unique colors */
+        color: white; /* Text color */
+        border: none; /* No border */
+        padding: 15px 30px; /* Padding for the button */
+        border-radius: 5px; /* Rounded corners */
+        text-decoration: none; /* Remove underline from link */
+        display: inline-block; /* Ensure proper spacing */
+        font-size: 18px; /* Font size */
+        transition: background-color 0.3s; /* Smooth transition */
+    }
+
+    /* Animation for blinking effect with 10 different shades */
+    @keyframes blinkShades {
+        0% {
+            background-color: #ffb3b3; /* Shade 1 */
+        }
+        10% {
+            background-color: #ff9999; /* Shade 2 */
+        }
+        20% {
+            background-color: #ff7f7f; /* Shade 3 */
+        }
+        30% {
+            background-color: #ff6666; /* Shade 4 */
+        }
+        40% {
+            background-color: #ff4c4c; /* Shade 5 */
+        }
+        50% {
+            background-color: #ff3232; /* Shade 6 */
+        }
+        60% {
+            background-color: #ff1919; /* Shade 7 */
+        }
+        70% {
+            background-color: #ff0000; /* Shade 8 */
+        }
+        80% {
+            background-color: #cc0000; /* Shade 9 */
+        }
+        90% {
+            background-color: #fd7e14; /* Color 8 */
+        }
+        100% {
+            background-color: #ffb3b3; /* Return to Initial Shade */
+        }
+    }
+
+    /* Blinking button style for the second button */
+    .blinking-button1 {
+        animation: blinkShades 2s infinite; /* Use unique shades */
+        color: white; /* Text color */
+        border: none; /* No border */
+        padding: 15px 30px; /* Padding for the button */
+        border-radius: 5px; /* Rounded corners */
+        text-decoration: none; /* Remove underline from link */
+        display: inline-block; /* Ensure proper spacing */
+        font-size: 18px; /* Font size */
+        transition: background-color 0.3s; /* Smooth transition */
+    }
+</style>
+
+
+
+ <!-- Conference Highlights Section -->
+  <div class="container mt-5">
+    <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="200">
+
+      <!-- First Column -->
+      <div class="col-lg-5 col-md-10 mb-4">
+        <div class="card" style="background-color: #F8D7DA; border-radius: 30px;"> <!-- Softer color -->
+
+          <div class="card-body text-left" style="padding: 40px;">
+            <div class="icon" style="font-size: 40px; color: #d63939;">
+              <i class="bi bi-trophy"></i> <!-- Updated icon -->
+            </div>
+            <h3 class="font-weight-bold" style="margin-bottom: 20px; color: #d63939;">Symposium Highlights</h3>
+            <ul class="list-styled" style="font-size: 12px; color: #333; padding-left: 0;">
+              <li>All the registered and presented paper will be published in the <b>“Symposium on Cyber
+                Security and Digital Forensics 2025” </b> book proceeding.</li>
+  
+              <li>Best student paper will be highlighted to our business and industry collaborators.</li>
+              
+              <li>Authors are invited to submit original, unpublished work related to the symposium sub-themes.
+                Papers should be written in English.</li>
+              
+              <li>The paper should be minimum 6 pages length as per IEEE paper format, inclusive of all figures,
+                  tables, and references.</li>
+              
+              <li>
+                Simultaneous submissions to other conferences or journals are not permitted.
+              </li>
+              <li>
+                Papers must pass a plagiarism check, with a Turnitin similarity index of below 10%.
+              </li>
+
+              <li>
+                Full paper submissions should be in PDF and can be made through the “Scan for Submission”.
+              </li>
+
+              <li>
+               We look forward to your valuable contributions to SCSDF2025.
+              </li>
+            </ul>
+          </div><br>
+        </div>
+      </div>
+
+      <!-- Second Column -->
+      <div class="col-lg-7 col-md-10 mb-4">
+        <div class="card" style="background-color: #D1ECF1; border-radius: 30px;"> <!-- Softer color -->
+          <div class="card-body text-left" style="padding: 40px;">
+            <div class="icon" style="font-size: 40px; color: #0C5460;">
+              <i class="bi bi-journal"></i> <!-- Updated icon -->
+            </div>
+            <h3 class="font-weight-bold" style="margin-bottom: 20px; color: #0C5460;">Objectives</h3>
+           <p>The aim of the "Symposium on Cybersecurity and Digital
+            Forensics" is to offer a collaborative platform for students,
+            researchers, and professionals to address the emerging challenges
+            associated with cybersecurity and digital forensics. The symposium
+            
+            seeks to facilitate creative, sophisticated techniques and state-of-the-
+            arts to combat increasing cyber threats and digital crimes. The event
+            
+            aims to empower attendees to devise effective solutions for the rapidly
+            evolving technology world by promoting information sharing and
+            interdisciplinary collaboration. The vital area includes the significance
+            of threat detection, mitigation, and forensic investigation, while
+            advocating for research and development in these emerging fields. The
+            symposium seeks to motivate students, researchers, and professionals
+            to present their work to establish a strong framework related to digital
+            ecosystems and addressing cybercrime in a progressively
+            interconnected world.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+
+
+
+   <!-- Section Title -->
+   <div class="container section-title" data-aos="fade-up"> <br>
+    <p> <span class="description-title"> Registration Fees</span></p>
+</div><!-- End Section Title -->
+
+<div class="container">
+
+<div class="table-responsive">
+<table class="table table-bordered table-hover text-center">
+<thead style="background-color: #34495E; color: #ECF0F1;">
+<tr>
+<th>Category</th>
+<th>Registration Fee</th>
+</tr>
+</thead>
+<tbody>
+<!-- INDIAN DELEGATES -->
+<tr style="background-color: #D5DBDB; font-weight: bold;">
+<td colspan="2">INDIAN DELEGATES (INR)</td>
+</tr>
+
+<tr style="background-color: #E8F8F5;">
+<td>Students Author</td>
+<td>INR 4000</td>
+</tr>
+<tr style="background-color: #FDFEFE;">
+<td>Other Participants</td>
+<td>INR 4000/person</td>
+</tr>
+
+<!-- INTERNATIONAL DELEGATES -->
+<tr style="background-color: #D5DBDB; font-weight: bold;">
+<td colspan="2">INTERNATIONAL DELEGATES (US $)</td>
+</tr>
+<tr style="background-color: #EAF2F8;">
+<td>Students Author</td>
+<td>$150</td>
+</tr>
+<tr style="background-color: #F0F3F4;">
+<td>Other Participants</td>
+<td>$100/person</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+ 
+
+
+
+<!-- End Section -->
+
+
+
+<section class="light-background">
+<!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+       
+        <p><span>Conference</span> <span class="description-title">Theme</span></p>
+      </div><!-- End Section Title -->
+
+
+
+
+     <div class="container">
+    <div class="row gy-4">
+
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative" style="background-color: #FDEDEC; padding: 20px; border-radius: 10px;">
+                <div class="icon">
+                    <i class="bi bi-lock-fill"></i>
+                </div>
+                <a href="#" class="stretched-link">
+                    <h3>Privacy and Information Security</h3>
+                </a>
+                <p>Privacy and Information Security address the challenges of safeguarding sensitive data while ensuring secure interactions across communication systems.</p>
+            </div>
+        </div><!-- End Service Item -->
+
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative" style="background-color: #E8F0FE; padding: 20px; border-radius: 10px;">
+                <div class="icon">
+                    <i class="bi bi-shield-lock"></i>
+                </div>
+                <a href="theme.html">
+                    <h3>Advancements in Cryptography</h3>
+                </a>
+                <p>Cryptography remains at the heart of data security, where cryptographic protocols ensure secure data transmission and storage.</p>
+            </div>
+        </div><!-- End Service Item -->
+
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative" style="background-color: #E4F7E4; padding: 20px; border-radius: 10px;">
+                <div class="icon">
+                    <i class="bi bi-eye-fill"></i>
+                </div>
+                <a href="theme.html">
+                    <h3>Cyber Threat Intelligence (CTI) and Mitigation</h3>
+                </a>
+                <p>Cyber Threat Intelligence (CTI) is a proactive approach to identifying and mitigating potential cyber threats.</p>
+            </div>
+        </div><!-- End Service Item -->
+
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative" style="background-color: #FEF4E4; padding: 20px; border-radius: 10px;">
+                <div class="icon">
+                    <i class="bi bi-cpu-fill"></i>
+                </div>
+                <a href="theme.html">
+                    <h3>Quantum Cryptography</h3>
+                </a>
+                <p>Quantum cryptography introduces revolutionary concepts like Quantum Key Distribution (QKD) and quantum hacking countermeasures.</p>
+            </div>
+        </div><!-- End Service Item -->
+
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative" style="background-color: #E0F7FA; padding: 20px; border-radius: 10px;">
+                <div class="icon">
+                    <i class="bi bi-bar-chart-line"></i>
+                </div>
+                <a href="theme.html">
+                    <h3>AI&ML in Cybersecurity</h3>
+                </a>
+                <p>AI and machine learning (ML) have transformed cybersecurity, enabling automated detection and response to cyber threats.</p>
+            </div>
+        </div><!-- End Service Item -->
+
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative" style="background-color: #FFEBEE; padding: 20px; border-radius: 10px;">
+                <div class="icon">
+                    <i class="bi bi-tools"></i>
+                </div>
+                <a href="theme.html">
+                    <h3>Security Testing & Auditing</h3>
+                </a>
+                <p>Security testing and auditing involve assessing and improving the security posture of IT systems.</p>
+            </div>
+        </div><!-- End Service Item -->
+
+       
+
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative" style="background-color: #E1F5FE; padding: 20px; border-radius: 10px;">
+                <div class="icon">
+                    <i class="bi bi-file-earmark-lock-fill"></i>
+                </div>
+                <a href="theme.html">
+                    <h3>Digital Forensics</h3>
+                </a>
+                <p>Digital forensics collects, analyses, and preserves digital evidence to investigate cyber crimes.</p>
+            </div>
+        </div><!-- End Service Item -->
+
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative" style="background-color: #E8F5E9; padding: 20px; border-radius: 10px;">
+                <div class="icon">
+                    <i class="bi bi-layers-fill"></i>
+                </div>
+                <a href="theme.html">
+                    <h3>Internet of Things (IoT) Security</h3>
+                </a>
+                <p>IoT security addresses the vulnerabilities associated with interconnected devices.</p>
+            </div>
+        </div><!-- End Service Item -->
+
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative" style="background-color: #FFFDE7; padding: 20px; border-radius: 10px;">
+                <div class="icon">
+                    <i class="bi bi-file-earmark-code-fill"></i>
+                </div>
+                <a href="theme.html">
+                    <h3>Software Security</h3>
+                </a>
+                <p>Software security involves practices that protect applications throughout their lifecycle.</p>
+            </div>
+        </div><!-- End Service Item -->
+
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative" style="background-color: #E3F2FD; padding: 20px; border-radius: 10px;">
+                <div class="icon">
+                    <i class="bi bi-shield-lock"></i>
+                </div>
+                <a href="theme.html">
+                    <h3>Web Security</h3>
+                </a>
+                <p>Web security involves protecting websites and applications from threats through various measures.</p>
+            </div>
+        </div><!-- End Service Item -->
+
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative" style="background-color: #FFEBEE; padding: 20px; border-radius: 10px;">
+                <div class="icon">
+                    <i class="bi bi-shield-lock"></i>
+                </div>
+                <a href="theme.html">
+                    <h3>Security Protocols</h3>
+                </a>
+                <p>Security protocols are essential for protecting data and communications across various systems.</p>
+            </div>
+        </div><!-- End Service Item -->
+
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative" style="background-color: #E8F5E9; padding: 20px; border-radius: 10px;">
+                <div class="icon">
+                    <i class="bi bi-exclamation-triangle-fill"></i>
+                </div>
+                <a href="theme.html">
+                    <h3>Incident Response and Management</h3>
+                </a>
+                <p>Incident response ensures timely detection and mitigation of security incidents.</p>
+            </div>
+        </div><!-- End Service Item -->
+		
+		 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative" style="background-color: #FFF8E1; padding: 20px; border-radius: 10px;">
+                <div class="icon">
+                    <i class="bi bi-code-slash"></i>
+                </div>
+                <a href="theme.html">
+                    <h3>Blockchain Technology: Innovations and Applications</h3>
+                </a>
+                <p>Blockchain, a decentralized and secure system, enables the development of distributed ledgers and smart contracts.</p>
+            </div>
+        </div><!-- End Service Item -->
+		
+
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative" style="background-color: #F3E5F5; padding: 20px; border-radius: 10px;">
+                <div class="icon">
+                    <i class="bi bi-shield-lock"></i>
+                </div>
+                <a href="theme.html">
+                    <h3>Security Policies, Auditing, and Assurance</h3>
+                </a>
+                <p>Effective security policies form the foundation of organizational security. Security audits and risk management ensure compliance with established standards.</p>
+            </div>
+        </div><!-- End Service Item -->
+
+    </div>
+</div>
+
+	
+</section>
+
+<style>
+  .color-changing-border {
+      padding: 20px;
+      background-color: ;
+      border-radius: 20px;
+      animation: borderChange 2s infinite alternate;
+      border-width: 4px;
+      border-style: inset;
+  }
+
+  @keyframes borderChange {
+      0% {
+          border-color: #ff9800; /* Orange */
+      }
+      25% {
+          border-color: #ff5722; /* Deep Orange */
+      }
+      50% {
+          border-color: #4caf50; /* Green */
+      }
+      75% {
+          border-color: #2196f3; /* Blue */
+      }
+      100% {
+          border-color: #9c27b0; /* Purple */
+      }
+  }
+  
+
+
+</style>
+
+<div class="container">
+  <div class="row gy-1" style="margin-top: 20px;">
+      <div class="col-lg-12 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+          <div class="about-content ps-0 ps-lg-3 color-changing-border">
+              <h3 class="text-center" style="color: #00796b;">Symposium Technical Program Committee </h3>
+              <div class="row text-center">
+                  <div class="col-md-4">
+                  <strong> Dr. Neelu Jyothi Ahuja</strong><br> UPES Dehradun, India  <br><br>
+                  <strong> Dr. Vinod Patidar </strong><br> UPES Dehradun, India<br><br>
+                  <strong> Dr. Hanumat Sastry</strong><br>  UPES Dehradun, India<br><br>  
+                  <strong> Dr. Keshav Sinha</strong><br>  UPES Dehradun, India<br><br>  
+                  <strong> Dr. Rajib Banerjee </strong><br>  UPES Dehradun, India<br><br>  
+
+                </div>
+                  <div class="col-md-4">
+               <strong> Dr. Pankaj Badoni </strong><br>  UPES Dehradun, India <br><br>
+        <strong> Dr. Chandra Mani Sharma</strong><br> UPES Dehradun, India<br><br>
+       <strong>  Dr. Ajay Prasad </strong><br> UPES Dehradun, India <br><br>
+        <strong>  Dr. Anil Kumar </strong><br>UPES Dehradun, India <br><br> 
+        <strong>  Dr. Sushabhan Chodhury </strong><br>UPES Dehradun, India <br><br> 
+
+                  </div>
+                  <div class="col-md-4">
+     
+                <strong>  Dr. Hitesh Kumar Sharma</strong><br>UPES Dehradun, India <br><br>
+          <strong>  Dr. Kaushik Ghosh</strong><br> UPES Dehradun, India <br><br>
+         <strong>  Dr. Virender Kadyan </strong><br>UPES Dehradun, India<br><br>
+         <strong> Dr. Christalin Nelson </strong><br> UPES Dehradun, India <br><br>
+     
+     
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>		
+
+
+
+ <!-- Clients Section -->
+<section id="clients" class="clients section light-background">
+
+  <div class="container">
+
+    <div class="swiper init-swiper">
+      <script type="application/json" class="swiper-config">
+        {
+          "loop": true,
+          "speed": 1000,
+          "autoplay": {
+            "delay": 1000
+          },
+          "slidesPerView": "auto",
+          "pagination": {
+            "el": ".swiper-pagination",
+            "type": "bullets",
+            "clickable": true
+          },
+          "breakpoints": {
+            "320": {
+              "slidesPerView": 1,
+              "spaceBetween": 20
+            },
+            "480": {
+              "slidesPerView": 2,
+              "spaceBetween": 40
+            },
+            "640": {
+              "slidesPerView": 3,
+              "spaceBetween": 60
+            },
+            "992": {
+              "slidesPerView": 4,
+              "spaceBetween": 80
+            }
+          }
+        }
+      </script>
+      <div class="swiper-wrapper align-items-center">
+        
+        <!--<div class="swiper-slide"><img src="assets/img/clients/" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/clients/" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/clients/" class="img-fluid" alt=""></div>-->
+		<!-- <div class="swiper-slide"><img src="assets/img/clients/client-22.png" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/clients/client-33.png" class="img-fluid" alt=""></div> -->
+        <!--<div class="swiper-slide"><img src="assets/img/clients/" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/clients/" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="assets/img/clients/" class="img-fluid" alt=""></div>-->
+      </div>
+    </div>
+
+  </div>
+
+</section><!-- /Clients Section -->
+
+<style>
+  .swiper-slide img {
+    width: 100%; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+  }
+</style>
+
+
+
+  </main>
+
+  <footer id="footer" class="footer">
+
+
+    <div class="container footer-top">
+     <div class="row gy-4">
+	 <div class="col-lg-4 col-md-12">
+                     
+              <span class="sitename">
+                <a href="https://upes.ac.in" class="logo d-flex align-items-center"> <img src="assets/img/team/team-5.jpg" class="img-fluid" alt=""> </a> </span>
+                     
+          </div>
+		  
+		  <!-- End Team Member -->
+		  
+		  
+        <div class="col-lg-4 col-md-12">
+          <h4>About</h4>
+          <span class="sitename"> <p class="text-justify"> <b> NIRF Ranking 2024 </b> <br>
+As per the National Institutional Ranking Framework (NIRF) 2024, the Ministry of Education, India, UPES has been ranked 46, with a rank of 42 in engineering, 41 in management and 28 in law.</p>
+
+</span>
+        </div>
+
+        <div class="col-lg-4 col-md-12">
+          <h4>Contact Us</h4>
+          <span class="sitename">
+          <p class="text-justify">
+Contact UPES, Bidholi Campus, Dehradun
+P.O. Bidholi Via Premnagar,
+Dehradun-248007 </p>
+<p><strong>Email:</strong> <span><a href="mailto:scsdf2025@gmail.com">scsdf2025@gmail.com</a></span></p>
+
+</span>
+        </div>
+
+      </div>
+    
+	
+
+    <div class="container copyright text-center mt-4">
+      <p> Copyright ©  <strong class="px-1 sitename">ICACSDF2025</strong></p>
+       </div>
+</div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!--Chatbot Script Start-->
+  
+<script>
+
+document.addEventListener('DOMContentLoaded', function() {
+  const chatbotButton = document.getElementById('chatbot-button');
+  const chatbotWindow = document.getElementById('chatbot-window');
+  const closeButton = document.getElementById('close-button');
+  const sendButton = document.getElementById('send-button');
+  const userInput = document.getElementById('user-input');
+  const messagesContainer = document.getElementById('chatbot-messages');
+
+  const quickResponses = {
+    "conference dates": "The conference will be held on 11th - 12th April 2025 at UPES Dehradun.",
+    "submit paper": "You can submit your paper through our CMT portal: https://cmt3.research.microsoft.com/ICACSDF2025/Submission/Index",
+    "submission deadline": "The paper submission deadline is 9th Jan 2025.",
+    "papers published": "Yes, all peer-reviewed, accepted, and presented papers will be published in Springer's SCOPUS Indexed book series 'Lecture Notes in Networks and Systems'.",
+    "register": "You can register for the conference through our registration form: https://forms.gle/Zs4cEwXudwkocFbU7"
+  };
+
+  function toggleChatbot() {
+    if (chatbotWindow.style.display === 'none' || chatbotWindow.style.display === '') {
+      chatbotWindow.style.display = 'flex';
+      chatbotButton.style.display = 'none';
+      if (messagesContainer.children.length === 0) {
+        addBotMessage("Hello! I'm the ICACSDF2025 Conference Assistant. How can I help you today?");
+      }
+    } else {
+      chatbotWindow.style.display = 'none';
+      chatbotButton.style.display = 'flex';
+    }
+  }
+
+  function addMessage(text, isBot) {
+    const messageContainer = document.createElement('div');
+    messageContainer.className = 'message-container';
+    
+    const messageElement = document.createElement('div');
+    messageElement.className = `message ${isBot ? 'bot-message' : 'user-message'}`;
+    messageElement.textContent = text;
+    
+    messageContainer.appendChild(messageElement);
+    messagesContainer.appendChild(messageContainer);
+    messagesContainer.scrollTop = messagesContainer.scrollHeight;
+  }
+
+  function addBotMessage(text) {
+    addMessage(text, true);
+  }
+
+  function addUserMessage(text) {
+    addMessage(text, false);
+  }
+
+  function handleUserInput() {
+    const text = userInput.value.trim();
+    if (text === '') return;
+
+    addUserMessage(text);
+    userInput.value = '';
+
+    // Simulate bot response
+    setTimeout(() => {
+      let botResponse = "I apologize, but I'm not sure about that. Could you please check the conference website for more details or contact us at conference_socs@ddn.upes.ac.in";
+      
+      // Check for matching quick responses
+      const lowercaseInput = text.toLowerCase();
+      for (const [keyword, response] of Object.entries(quickResponses)) {
+        if (lowercaseInput.includes(keyword)) {
+          botResponse = response;
+          break;
+        }
+      }
+      
+      addBotMessage(botResponse);
+    }, 1000);
+  }
+
+  chatbotButton.addEventListener('click', toggleChatbot);
+  closeButton.addEventListener('click', toggleChatbot);
+  sendButton.addEventListener('click', handleUserInput);
+  userInput.addEventListener('keypress', function(e) {
+    if (e.key === 'Enter') {
+      handleUserInput();
+    }
+  });
+});
+
+
+
+
+
+
+
+
+const suggestions = [
+    {
+      text: 'Conference dates',
+    },
+    {
+    
+  
+      text: 'Submit paper',
+  
+    },
+    {
+     
+      text: 'Submission deadline',
+    
+    },
+    {
+   
+      text: 'Papers published',
+    },
+    {
+     
+      text: 'Register',
+    
+    }
+  ];
+
+  const suggestionsContainer = document.getElementById('chatbot-suggestions');
+  const suggestionsList = document.getElementById('suggestions-list');
+  const closeButton = document.getElementById('close-suggestions');
+  const chatbotButton = document.getElementById('chatbot-button');
+  const userInput = document.getElementById('user-input');
+
+  // Create suggestion items
+  suggestions.forEach(suggestion => {
+    const item = document.createElement('div');
+    item.className = 'suggestion-item';
+    item.innerHTML = `
+      <div class="suggestion-content">
+        <div class="suggestion-text">${suggestion.text}</div>
+      </div>
+    `;
+    item.addEventListener('click', () => {
+      userInput.value = suggestion.text;
+      userInput.focus();
+    });
+    suggestionsList.appendChild(item);
+  });
+
+  // Close suggestions panel
+  closeButton.addEventListener('click', () => {
+    suggestionsContainer.style.display = 'none';
+  });
+
+  // Show/hide suggestions with chatbot
+  chatbotButton.addEventListener('click', () => {
+    if (chatbotWindow.style.display === 'none' || chatbotWindow.style.display === '') {
+      suggestionsContainer.style.display = 'block';
+    } else {
+      suggestionsContainer.style.display = 'none';
+    }
+  });
+
+</script>
+
+
+<!--Chatbot Script End-->
+
+
+
+
+
+  <!-- Vendor JS Files -->
+<!--  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>-->
+    <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+ <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
