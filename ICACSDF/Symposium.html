@@ -352,6 +352,21 @@
     align-items: center;
     gap: 360px;
 }
+
+/* For mobile screens (max-width: 768px) */
+@media (max-width: 768px) {
+  .headercontainer {
+    flex-direction: column;  /* Stack items vertically */
+    gap: 20px; /* Reduce the gap between items */
+  }
+}
+
+/* For smaller screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .headercontainer {
+    gap: 10px; /* Further reduce the gap for very small screens */
+  }
+}
     </style>
 
 
@@ -1654,7 +1669,7 @@ document.addEventListener('DOMContentLoaded', function() {
     "submit paper": "You can submit your paper through our registration form : https://forms.gle/kE6sHdqrUtzjxSgp6",
     "submission deadline": "The paper submission deadline is 28th Feb 2025.",
     "papers published": "Yes, all peer-reviewed, accepted, and presented papers will be published in Symposium Book Procedings under the Banner of ICACSDF 2025",
-    "register": "You can register for the conference through our registration form: https://forms.gle/ajAcTLXBS9YTJb6s6 "
+    "register": "You can register for the Student Symposium through our registration form: https://forms.gle/ajAcTLXBS9YTJb6s6 "
   };
 
   function toggleChatbot() {
