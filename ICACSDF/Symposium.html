@@ -346,6 +346,12 @@
   font-size: 0.8em;
   color: #666;
 }
+.headercontainer{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 360px;
+}
     </style>
 
 
@@ -501,16 +507,24 @@
         and Digital Forensics (ICACSDF2025)</b></h2>
     <h2> <span> <strong class="px-1 sitename">  (Hybrid Mode)  </strong> </span></h2> 
       <br/>
-      <h2> <span> <strong class="px-1 sitename">  11th - 12th April 2025 </strong> </span></h2> 
-       <h3><span> <strong class="px-1 sitename"> Venue: UPES Dehradun </strong> </span> </h3> 
-	
-    <h2> <span> Event Starts in
-      <div class="hero-content">
-        <div id="timer">  
-          <span> <strong class="px-1 sitename"> Loading... </strong> </span>
-		  </div>
+      <div class="headercontainer">
+        <div class="leftbox">
+          <h2> <span> <strong class="px-1 sitename">  11th - 12th April 2025 </strong> </span></h2> 
+          <h3><span> <strong class="px-1 sitename"> Venue: UPES Dehradun </strong> </span> </h3> 
+   
+        </div>
+        <div class="rightbox">
+          <h2> <span> Event Starts in
+            <div class="hero-content">
+              <div id="timer">  
+                <span> <strong class="px-1 sitename"> Loading... </strong> </span>
+            </div>
+            </div>
+          </span> </h2>
+        </div>
       </div>
-    </span> </h2>
+     	
+ 
 	
 
     
@@ -562,9 +576,9 @@
 
     .upes-section {
         font-family: 'Poppins', sans-serif;
-        background: linear-gradient(135deg, #000000 0%, #0a0a0a 100%);
+        background: white;
         padding: 4rem 0;
-        color: #fff;
+        color: #000000;
         overflow: hidden;
         position: relative;
     }
@@ -584,7 +598,7 @@
         font-size: 3rem;
         font-weight: 700;
         text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-        color: white;
+        color: rgb(0, 0, 0);
     }
 
     .info-grid {
@@ -633,13 +647,13 @@
         font-weight: 600;
         text-transform: uppercase;
         letter-spacing: 1px;
-        background: rgba(255,255,255,0.2);
+        background: black;
         backdrop-filter: blur(5px);
         transition: background 0.3s ease;
     }
 
     .badge:hover {
-        background: rgba(255,255,255,0.3);
+        background: black;
     }
 
     .ranking-grid {
@@ -674,7 +688,7 @@
     .ranking-label {
         font-size: 0.9rem;
         font-weight: 400;
-        color: #e0e0e0;
+        color: #000000;
     }
 
     @media (max-width: 768px) {
@@ -695,7 +709,7 @@
         <h2 class="section-title">About UPES</h2>
         <div class="info-grid">
             <div class="info-card" id="overview-card">
-                <h3 class="card-title">University Overview</h3>
+                <h3 class="card-title blinking-button">University Overview</h3>
                 <p class="card-content">
                     The University of Petroleum and Energy Studies (UPES) is a beacon of multidisciplinary education in Dehradun, India. Offering cutting-edge courses in engineering, management, law, design, health sciences, and modern media, UPES is shaping the leaders of tomorrow.
                 </p>
@@ -706,7 +720,7 @@
                 </div>
             </div>
             <div class="info-card" id="achievements-card">
-                <h3 class="card-title">Stellar Achievements</h3>
+                <h3 class="card-title blinking-button1">Stellar Achievements</h3>
                 <ul class="card-content">
                     <li>QS Five Stars Global Rating for Employability and Facilities</li>
                     <li>Consistently ranked among top 100 universities in India by NIRF</li>
@@ -737,7 +751,7 @@
             </div>
         </div>
         <div class="info-card">
-          <h3>About the Symposium</h3>
+          <h3 class="blinking-button">About the Symposium</h3>
           <p>The School of Computer Science at UPES Dehradun is hosting the Symposium on Cybersecurity and Digital Forensics as part of the prestigious International Conference On Advancement In Cyber Security And Digital Forensics 2025.</p>
           <p>This symposium brings an excellent platform to showcase working projects as whitepapers in front of experts and professionals from around the world.</p>
         </div>
@@ -849,7 +863,7 @@
 }
 
 .info-card p {
-  color: #ddd;
+  color: #000000;
   line-height: 1.6;
   margin-bottom: 1rem;
 }
@@ -977,6 +991,7 @@
 
 		<a href="https://forms.gle/ajAcTLXBS9YTJb6s6" class="blinking-button1">Registration</a>
     <a href="assets/IEEE+Word-pape-Template.zip" class="blinking-button">Symposium Paper Template</a>
+		<a href="assets/SSCSDF_Final (1).pdf" class="blinking-button1">Download Flyer</a>
 
            </div>
 </div>
@@ -1118,7 +1133,7 @@
               </li>
 
               <li>
-                Full paper submissions should be in PDF and can be made through the “Scan for Submission”.
+                Full paper submissions should be in PDF and can be made through the <b>“Scan to submit paper ”</b>.
               </li>
 
               <li>
@@ -1194,11 +1209,11 @@
 
 <tr style="background-color: #E8F8F5;">
 <td>Students Author</td>
-<td>INR 4000/person</td>
+<td>INR 4000</td>
 </tr>
 <tr style="background-color: #FDFEFE;">
 <td>Attendee</td>
-<td>INR 1000/person</td>
+<td>INR 1000</td>
 </tr>
 
 </tbody>
@@ -1635,11 +1650,11 @@ document.addEventListener('DOMContentLoaded', function() {
   const messagesContainer = document.getElementById('chatbot-messages');
 
   const quickResponses = {
-    "conference dates": "The conference will be held on 11th - 12th April 2025 at UPES Dehradun.",
-    "submit paper": "You can submit your paper through our CMT portal: https://cmt3.research.microsoft.com/ICACSDF2025/Submission/Index",
-    "submission deadline": "The paper submission deadline is 20th Jan 2025.",
-    "papers published": "Yes, all peer-reviewed, accepted, and presented papers will be published in Springer's SCOPUS Indexed book series 'Lecture Notes in Networks and Systems'.",
-    "register": "You can register for the conference through our registration form: https://forms.gle/Zs4cEwXudwkocFbU7"
+    "student symposium dates": "The Student Symposium will be held on 11th - 12th April 2025 at UPES Dehradun.",
+    "submit paper": "You can submit your paper through our registration form : https://forms.gle/kE6sHdqrUtzjxSgp6",
+    "submission deadline": "The paper submission deadline is 28th Feb 2025.",
+    "papers published": "Yes, all peer-reviewed, accepted, and presented papers will be published in Symposium Book Procedings under the Banner of ICACSDF 2025",
+    "register": "You can register for the conference through our registration form: https://forms.gle/ajAcTLXBS9YTJb6s6 "
   };
 
   function toggleChatbot() {
@@ -1719,7 +1734,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 const suggestions = [
     {
-      text: 'Conference dates',
+      text: 'Student Symposium dates',
     },
     {
     
