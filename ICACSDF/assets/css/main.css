@@ -2051,3 +2051,9 @@ section,
       font-size: 18px;
   }
 }
+.bullet {
+  display: inline-block;
+  width: 1em;
+  color: #a777e3;
+  font-size: 20px;
+}
