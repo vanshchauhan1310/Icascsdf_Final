@@ -2057,3 +2057,27 @@ section,
   color: #a777e3;
   font-size: 20px;
 }
+
+.blinking-button2 {
+  background-color: #106eea;
+  color: white; /* Text color */
+  border: none; /* No border */
+  padding: 15px 30px; /* Padding for the button */
+  border-radius: 5px; /* Rounded corners */
+  text-decoration: none; /* Remove underline from link */
+  display: inline-block; /* Ensure proper spacing */
+  font-size: 18px; /* Font size */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+.blinking-button3 {
+  background-color: red;
+  color: white; /* Text color */
+  border: none; /* No border */
+  padding: 15px 30px; /* Padding for the button */
+  border-radius: 5px; /* Rounded corners */
+  text-decoration: none; /* Remove underline from link */
+  display: inline-block; /* Ensure proper spacing */
+  font-size: 18px; /* Font size */
+  transition: background-color 0.3s; /* Smooth transition */
+}
