@@ -346,6 +346,122 @@
   font-size: 0.8em;
   color: #666;
 }
+
+.speakers-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            max-width: 1440px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        
+        .speaker-card {
+            position: relative;
+            width: 220px;
+            height: 320px;
+            perspective: 1000px;
+        }
+        
+        .card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transition: transform 1s;
+            transform-style: preserve-3d;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            border-radius: 10px;
+        }
+        
+        .card-face {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1.5rem;
+            background-color: white;
+        }
+        
+        .card-back {
+            transform: rotateY(180deg);
+        }
+        
+        .speaker-image {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #1a3a6e;
+            margin-bottom: 1rem;
+        }
+        
+        .speaker-name {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            color: #1a3a6e;
+            text-align: center;
+        }
+        
+        .speaker-title {
+            font-size: 0.9rem;
+            color: #555;
+            text-align: center;
+            margin-bottom: 0.5rem;
+        }
+        
+        .speaker-topic {
+            font-size: 0.9rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            text-align: center;
+        }
+        
+        .speaker-time {
+            font-size: 0.9rem;
+            color: #d23669;
+            font-weight: bold;
+            text-align: center;
+        }
+        
+        #countdown {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        
+        @media (max-width: 768px) {
+            .speakers-container {
+                gap: 10px;
+            }
+            
+            .speaker-card {
+                width: 260px;
+                height: 280px;
+            }
+            
+            .speaker-image {
+                width: 100px;
+                height: 100px;
+            }
+            
+            .hero-head {
+                font-size: 1.5rem;
+            }
+            
+            .hero-tag {
+                font-size: 1.2rem;
+            }
+        }
+
+        .about1{
+          display: flex;
+          justify-content: space-evenly;
+        }
     </style>
 
 
@@ -494,7 +610,7 @@
   
   <div class="hero-content">
     <h1> International Conference On Advancement In Cyber Security And Digital Forensics  </h1> <br> <h1>(ICACSDF2025) </h1> <br>
-    <h2> <span> <strong class="px-1 sitename">  (Hybrid Mode*)  </strong> </span></h2> 
+    <!-- <h2> <span> <strong class="px-1 sitename">  (Hybrid Mode*)  </strong> </span></h2>  -->
       <br/>
       <h2> <span> <strong class="px-1 sitename">  11th - 12th April 2025 </strong> </span></h2> 
        <h3><span> <strong class="px-1 sitename"> Venue: UPES Dehradun </strong> </span> </h3> 
@@ -513,6 +629,119 @@
   
 </section><!-- /Hero Section -->
 <!-- /Hero Section -->
+ <center>
+  <h1>Our Speaker</h1> <br>
+
+ </center>
+
+<div class="speakers-container">
+  <!-- 5 card containers that will each rotate between 2 speakers -->
+  <div class="speaker-card" id="card1">
+      <div class="card-inner">
+          <div class="card-face card-front">
+              <img src="assets/img/speakers/drXiaozhi Gao.jpg" alt="Dr. Xiaozhi Gao" class="speaker-image">
+              <div class="speaker-name">Dr. Xiaozhi Gao</div>
+              <div class="speaker-title">School of Computing, Faculty of Science, Forestry and Technology,University of Eastern Finland, Finland</div>
+              <!-- <div class="speaker-topic">Zero Trust Architecture in 2025</div>
+              <div class="speaker-time">11th April, 9:30 AM</div> -->
+          </div>
+          <div class="card-face card-back">
+              <img src="assets/img/speakers/Prof-RajaDutta.jpg" alt="Prof (Dr) Raja Datta" class="speaker-image">
+              <div class="speaker-name">Prof (Dr) Raja Datta</div>
+              <div class="speaker-title">Head, Computer and Informatics Centre
+                Indian Institute of Technology Kharagpur</div>
+              <!-- <div class="speaker-topic">Quantum Computing Threats</div>
+              <div class="speaker-time">12th April, 10:00 AM</div> -->
+          </div>
+      </div>
+  </div>
+  
+  <div class="speaker-card" id="card2">
+      <div class="card-inner">
+          <div class="card-face card-front">
+              <img src="assets/img/speakers/Yoginder.jpeg" alt="Dr. Yoginder Talwar" class="speaker-image">
+              <div class="speaker-name">Dr. Yoginder Talwar</div>
+              <div class="speaker-title">Sr. Director (IT) / Scientist-F
+                Application Security Audit Delhi,Government of India</div>
+              <!-- <div class="speaker-topic">Blockchain Forensics</div>
+              <div class="speaker-time">11th April, 11:00 AM</div> -->
+          </div>
+          <div class="card-face card-back">
+              <img src="/ICACSDF/assets/img/speakers/sudhakar.jpeg" alt="Dr. Sudhakar" class="speaker-image">
+              <div class="speaker-name">Dr. Sudhakar</div>
+              <div class="speaker-title">Scientist ‘D’/ Joint Director
+                Indian Computer Emergency Response Team (CERT-In),
+                Government of India</div>
+              <!-- <div class="speaker-topic">Mobile Device Forensics</div>
+              <div class="speaker-time">12th April, 11:30 AM</div> -->
+          </div>
+      </div>
+  </div>
+  
+  <div class="speaker-card" id="card3">
+      <div class="card-inner">
+          <div class="card-face card-front">
+              <img src="/ICACSDF/assets/img/speakers/celestin.jpg" alt="Prof. Celestine" class="speaker-image">
+              <div class="speaker-name">Prof. Celestine</div>
+              <div class="speaker-title">IEEE Brand Ambassador,
+                Professor of Artificial Intelligence and
+                Head of the Centre of Intelligence of Things (CIoTh)
+                University of Greater Manchester, Bolton.</div>
+              <!-- <div class="speaker-topic">AI-Powered Threat Detection</div>
+              <div class="speaker-time">11th April, 2:00 PM</div> -->
+          </div>
+          <div class="card-face card-back">
+              <img src="/ICACSDF/assets/img/speakers/Ben Othman Soufiene.jpeg" alt="Ben Othman Soufiene" class="speaker-image">
+              <div class="speaker-name">Ben Othman Soufiene</div>
+              <div class="speaker-title">Assistant Professor
+                Computer Science
+                King Faisal University
+                Saudi Arabia</div>
+              <!-- <div class="speaker-topic">Securing Financial Systems</div>
+              <div class="speaker-time">12th April, 2:30 PM</div> -->
+          </div>
+      </div>
+  </div>
+  
+  <div class="speaker-card" id="card4">
+      <div class="card-inner">
+          <div class="card-face card-front">
+              <img src="/ICACSDF/assets/img/speakers/meena.jpeg" alt="Dr. Meena Jha" class="speaker-image">
+              <div class="speaker-name">Dr. Meena Jha</div>
+              <div class="speaker-title">Head Technology and Pedagogy Cluster CML-NET,Central Queensland University,
+                Rockhampton, Australia              </div>
+              <!-- <div class="speaker-topic">Advanced Persistent Threats</div>
+              <div class="speaker-time">11th April, 3:30 PM</div> -->
+          </div>
+          <div class="card-face card-back">
+              <!-- <img src="/api/placeholder/120/120" alt="Dr. Maria Rodriguez" class="speaker-image">
+              <div class="speaker-name">Dr. Maria Rodriguez</div>
+              <div class="speaker-title">Lead Security Researcher, Google</div>
+              <div class="speaker-topic">Cloud Security Challenges</div>
+              <div class="speaker-time">12th April, 3:00 PM</div> -->
+          </div>
+      </div>
+  </div>
+  
+  <!-- <div class="speaker-card" id="card5">
+      <div class="card-inner">
+          <div class="card-face card-front">
+              <img src="/api/placeholder/120/120" alt="Alex Nguyen" class="speaker-image">
+              <div class="speaker-name">Alex Nguyen</div>
+              <div class="speaker-title">Ethical Hacker, CyberForce Security</div>
+              <div class="speaker-topic">Penetration Testing Methodologies</div>
+              <div class="speaker-time">11th April, 5:00 PM</div>
+          </div>
+          <div class="card-face card-back">
+              <img src="/api/placeholder/120/120" alt="Sophia Clarke" class="speaker-image">
+              <div class="speaker-name">Sophia Clarke</div>
+              <div class="speaker-title">Digital Forensics Expert, FBI</div>
+              <div class="speaker-topic">Criminal Investigation Techniques</div>
+              <div class="speaker-time">12th April, 4:30 PM</div>
+          </div>
+      </div>
+  </div> -->
+</div>
 
  
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
@@ -549,24 +778,52 @@
             document.getElementById("timer").innerHTML = "EXPIRED";
         }
     }, 1000);
+
+
+       // Speaker card rotation
+       const cards = document.querySelectorAll('.speaker-card');
+        const rotationInterval = 5000; // Rotate every 5 seconds
+        
+        // Set different starting times for each card to create a cascading effect
+        cards.forEach((card, index) => {
+            const cardInner = card.querySelector('.card-inner');
+            let isFlipped = false;
+            
+            // Add different delay for each card
+            setTimeout(() => {
+                setInterval(() => {
+                    isFlipped = !isFlipped;
+                    if (isFlipped) {
+                        cardInner.style.transform = 'rotateY(180deg)';
+                    } else {
+                        cardInner.style.transform = 'rotateY(0deg)';
+                    }
+                }, rotationInterval);
+            }, index * 1000); // Stagger the start by 1 second per card
+        });
 </script>
 
 
-<section class="about light-background">
+<section class="about1 light-background">
 <center>
   <!-- <h1><b>Sponsored By</b></h1> <br> -->
 </center>
 
-<center>
-  <img src="/assets/img/comptia.png" width="266px" height="fit-content"/>
 
-</center>
+  <img src="/ICACSDF/assets/img/comptia.png" width="200px" height="fit-content"/>
+  <img src="/ICACSDF/assets/img/castellum-.png" width="150px" height="100px"/>
+  <img src="/ICACSDF/assets/img/gca-logo-blackbg.jpg" width="150px" height="100px"/>
+  <img src="/ICACSDF/assets/img/Ec_Council_Logo.png" width="200px" height="100px"/>
+
+
+
+
 </section>
 
     <!-- About Section -->
     <section class="about section dark-background">
 
-<div style="color:#fff; font-weight:400; background-color:; margin-top:-30px"><marquee behavior="alternate"><span style="margin-left:20px"> <Strong> Paper submission is closed, review completed, and registration opens on March 10, 2025.</strong> </span></marquee></div>
+<div style="color:#fff; font-weight:400; background-color:; margin-top:-30px"><marquee behavior="alternate"><span style="margin-left:20px"> <Strong> Registration is open. All accepted Paper authors are requested to register ASAP. For online presentation, please contact Keshav.sinha@ddn.upes.ac.in</strong> </span></marquee></div>
 
   <!-- <div style="color:#ff0000; font-weight:400; background-color:; margin-top:10px"><marquee behavior="alternate"><span style="margin-left:20px"> <Strong> Due to a high demand, the last date of paper submission has been extended till 9th January 2025. </strong> </span></marquee></div> -->
 
@@ -1104,10 +1361,14 @@
         <!--<div class="swiper-slide"><img src="assets/img/clients/" class="img-fluid" alt=""></div>
         <div class="swiper-slide"><img src="assets/img/clients/" class="img-fluid" alt=""></div>
         <div class="swiper-slide"><img src="assets/img/clients/" class="img-fluid" alt=""></div>-->
-		<div>
-      <img src="assets/img/clients/client-22.png" alt="">
-      <img src="assets/img/clients/client-33.png" width="240px" height="65px">
-      <img src="assets/img/comptia.png" width="240px" height="51px">
+		<div class="about1">
+      <img src="assets/img/clients/client-22.png" alt="" width="150px" height="100px">
+      <img src="assets/img/clients/client-33.png" width="150px" height="100px">
+      <img src="assets/img/comptia.png" width="150px" height="100px">
+      <img src="/ICACSDF/assets/img/castellum-.png" width="150px" height="100px"/>
+      <img src="/ICACSDF/assets/img/gca-logo-blackbg.jpg" width="150px" height="100px"/>
+      <img src="/ICACSDF/assets/img/Ec_Council_Logo.png" width="200px" height="100px"/>
+    
     </div>
         <div></div>
         <div></div>
